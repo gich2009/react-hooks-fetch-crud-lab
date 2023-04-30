@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { endPoint } from "./App";
 
 function QuestionItem({ question , onDeleteQuestion, onSelectOption}) {

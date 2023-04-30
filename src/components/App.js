@@ -21,7 +21,8 @@ function App() {
   }
 
   function deleteQuestion(deleteId){
-    setQuestions(questions.filter((question) => question.id !== deleteId));
+    const newQuestion = questions.filter((question) => question.id !== deleteId);
+    setQuestions(newQuestion);
   }
 
   function selectOption(updateId, updatedOption){
